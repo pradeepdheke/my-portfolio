@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+:root {
+  --primary: #D47E27;
+  --secondary: #51A88B;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  font-family: "roberto", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* hero section  */
+.hero {
+  background: cyan url(./assets/bg.png) no-repeat center center;
+  background-size: cover;
+  min-height: 50vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.section-title {
+  font-size: 3rem;
+  border-bottom: 5px solid var(--secondary);
+  width: 120px;
+  margin: 5 rem auto;
+}
+
+.skills-list {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  font-size: 2rem;
+}
+
+.skills-list i {
+  font-size: 6rem;
+  display: block;
+}
+
+/* project section */
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.contact i {
+  font-size: 3rem;
+}
+
+.footer {
+  position: relative;
+}
+
+.up {
+  position: absolute;
+  right: 20px;
+  bottom: 30px;
+  width: 50px;
+  height: 50px;
+  background: white;
+  color: var(--primary);
+  border-radius: 50%;
+  font-size: 2rem;
+
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  align-items: center;
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
